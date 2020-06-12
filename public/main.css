@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+div#canvas{
+  width:70vw;
+  height:80vh;
+  margin:2px;
+  border:1px solid lightgrey;
+  background: #fff;
+}
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hover_line{
+  cursor: pointer;
+}
+.btn-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  max-height: 100vh;
+  width: fit-content;
+}
+
+.sidebar {
+  display:flex;
+  flex-direction: column;
+}
+
+
+input#import {
+  display:none;
+}
+
+input#importScript {
+  display:none;
+}
+
+.svg_select_points_point{
+  cursor: move;
+}
+

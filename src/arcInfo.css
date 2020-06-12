@@ -1,0 +1,18 @@
+.draglist-container {
+  display:flex;
+  flex-direction: row;
+  height: 40vh;
+  overflow: auto;
+}
+
+.numbering-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: -1px;
+}
+
+.numbering-item {
+  margin-bottom: -1px;
+  border:1px solid lightgrey;
+}
+
