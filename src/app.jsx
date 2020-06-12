@@ -285,11 +285,12 @@ const App = () => {
       e.preventDefault();
     });
 
-    drawing = window.SVG('canvas').size('100%', '100%').panZoom({
-      zoomFactor:1.05,
-      zoomMin: 1,
-      zoomMax: 3
-    });
+    drawing = window.SVG('canvas').size('100%', '100%')
+    // .panZoom({
+    //   zoomFactor:1.05,
+    //   zoomMin: 1,
+    //   zoomMax: 3
+    // });
 
     const fileSelect = document.getElementById("fileSelect"),
     importfile = document.getElementById("import");
