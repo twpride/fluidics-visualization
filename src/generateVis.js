@@ -129,7 +129,7 @@ export const runScript = (script, runState, drawing) => {
     .find(e => e.type.toLowerCase() === 'valve' && e.name.toLowerCase() === 'waste').id
 
   const setValves = (valveStateName) => {
-    const valveStates = runState.valveConfig[valveStateName]
+    const valveStates = runState.ValvePortMapping[valveStateName]
 
     for (let [vName, vId] of valves) {
       const config = runState.arcs[vId].config
