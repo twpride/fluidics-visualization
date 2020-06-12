@@ -190,7 +190,7 @@ export const runScript = (script, runState, drawing) => {
           line.geom.length - 1 : 0
 
         if (['supply','waste'].includes(line.type) 
-          || line.type === "sipper" && !elevatorUp) {
+          || (line.type === "sipper" && !elevatorUp)) {
 
           return [...path, [line, downStNdIdx]]
         } else {
@@ -204,14 +204,14 @@ export const runScript = (script, runState, drawing) => {
     let airVol = 0
     let bulkVol = 0
     for (let i of tub.initState){
-      if (i[0]!="Air") bulkVol+=i[1]
+      if (i[0]!=="Air") bulkVol+=i[1]
       else airVol+=i[1]
     }  
 
     tub.initState=[]
 
-    if (bulkVol!=0) tub.initState.push(["Bulk_Fluid",bulkVol])  
-    if (airVol!=0) tub.initState.push(["Air",airVol])     
+    if (bulkVol!==0) tub.initState.push(["Bulk_Fluid",bulkVol])  
+    if (airVol!==0) tub.initState.push(["Air",airVol])     
   }
 
   const updateState = (path) => {
@@ -236,7 +236,7 @@ export const runScript = (script, runState, drawing) => {
       if (combinedVols[i] === cumLineVols[d]) {
         if (newSeg.length > 1) {
           for (let j = newSeg.length - 2; j >= 0; j--) {
-            if (newSeg[j][0] == newSeg[j + 1][0]) {
+            if (newSeg[j][0] === newSeg[j + 1][0]) {
               newSeg[j][1] = newSeg[j][1] + newSeg[j + 1][1]
               newSeg.splice(j + 1, 1)
             }
@@ -388,8 +388,8 @@ export const runScript = (script, runState, drawing) => {
   let k = 0
   while (k<script.length){
     const line=script[k].split(/\s+/)
-    if (line.length==0) continue
-    else if (line[0]=="LoopStart"){
+    if (line.length===0) continue
+    else if (line[0]==="LoopStart"){
       let endfound=false
       let j=0
       while (!endfound && k+j+1<script.length){

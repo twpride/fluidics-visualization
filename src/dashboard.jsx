@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useReducer} from 'react';
+import React, { useState, useEffect} from 'react';
 import './dashboard.css'
-import { useTable , useExpanded} from 'react-table'
+import { useTable } from 'react-table'
 import {EDIT_ARC_PARAMS} from './app'
 
 const EditableCell = ({

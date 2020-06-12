@@ -272,7 +272,7 @@ const App = () => {
   // https://adamrackis.dev/state-and-use-reducer/
 
   const [store, dispatch] = useReducer(stateReducer, {arcs:{},nodes:{},ui:{focusArc:[]}});
-  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
+  const [_, forceUpdate] = useReducer(x => x + 1, 0);
   const [configFile, setConfigFile] = useState('');
   const [scriptFile, setScriptFile] = useState('');
 
@@ -286,11 +286,11 @@ const App = () => {
     });
 
     drawing = window.SVG('canvas').size('100%', '100%')
-    // .panZoom({
-    //   zoomFactor:1.05,
-    //   zoomMin: 1,
-    //   zoomMax: 3
-    // });
+    .panZoom({
+      zoomFactor:1.05,
+      zoomMin: 1,
+      zoomMax: 3
+    });
 
     const fileSelect = document.getElementById("fileSelect"),
     importfile = document.getElementById("import");
@@ -365,7 +365,7 @@ const App = () => {
 
   function getCoincidentPt(e) {
     if (e.button !== 2) return // early when not right click
-
+    console.log("here")
     p.x = e.clientX - (offset.x - window.pageXOffset);
     p.y = e.clientY - (offset.y - window.pageYOffset)
     const newPt = p.matrixTransform(canvasTranform);
@@ -409,7 +409,7 @@ const App = () => {
 
       break
     }
-
+// 
   }
 
   function getDeletePt(e) {
