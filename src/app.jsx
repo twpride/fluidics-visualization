@@ -365,10 +365,10 @@ const App = () => {
 
   function getCoincidentPt(e) {
     if (e.button !== 2) return // early when not right click
-    console.log("here")
+
     p.x = e.clientX - (offset.x - window.pageXOffset);
     p.y = e.clientY - (offset.y - window.pageYOffset)
-    const newPt = p.matrixTransform(canvasTranform);
+    const newPt = p.matrixTransform(drawing.node.getScreenCTM().inverse());
 
     // https://stackoverflow.com/questions/328107/how-can-you-determine-a-point-is-between-two-other-points-on-a-line-segment
     let arcArr = this.array().valueOf();

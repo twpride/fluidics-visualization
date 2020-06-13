@@ -288,11 +288,11 @@ export const runScript = (script, runState, drawing) => {
       plot.polyline(elements.slice(boundaryPts[j], boundaryPts[j + 1] + 1))
           .stroke({ width: lw, color: reagents[arc.initState[j][0]].color })
           .fill('none')
-      // if (dispPlot) {
-      //   dispPlot.polyline(elements.slice(boundaryPts[j], boundaryPts[j + 1] + 1))
-      //       .stroke({ width: 3, color: reagents[arc.initState[j][0]].color })
-      //       .fill('none')      
-      // }
+      if (dispPlot) {
+        dispPlot.polyline(elements.slice(boundaryPts[j], boundaryPts[j + 1] + 1))
+            .stroke({ width: 3, color: reagents[arc.initState[j][0]].color })
+            .fill('none')      
+      }
     }
   
     for (j = 0; j < midIdx.length; j++) {
@@ -313,13 +313,13 @@ export const runScript = (script, runState, drawing) => {
       updateState(path)   
 
       plot.last().remove()
-      // const dispPlot = plot.group()
+      const dispPlot = plot.group()
       path.forEach(([e,_]) => {
         if (e.type !== 'valve') {
           e.svgHandle.remove()
           const linePlot = plot.group()
 
-          drawState(e, linePlot)
+          drawState(e, linePlot,dispPlot)
           e.svgHandle = linePlot
         }
       })
@@ -327,7 +327,7 @@ export const runScript = (script, runState, drawing) => {
             .font({ size: 30 })
             .move(930,470)
       if (genPlot) res.push(plot.svg())
-
+      dispPlot.remove()
     },
     Dispense: (param,genPlot,k)=>{
       const vId = wasteValveId
