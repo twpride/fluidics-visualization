@@ -287,8 +287,8 @@ const App = () => {
 
     drawing = window.SVG('canvas').size('100%', '100%')
     .panZoom({
-      zoomFactor:1.05,
-      zoomMin: 1,
+      zoomFactor:.5,
+      zoomMin: 0.5,
       zoomMax: 3
     });
 
@@ -601,9 +601,9 @@ const App = () => {
       geom = drawing.polyline()
       geom.draw({ snapToGrid: 10 })
       attachLineHandlers(geom,dispatch)
-      geom.on('drawstart', () => document.addEventListener('keydown', endDraw))
+      geom.on('drawstart', () => document.addEventListener('dblclick', endDraw))
 
-      geom.on('drawstop', () => document.removeEventListener('keydown', endDraw))
+      geom.on('drawstop', () => document.removeEventListener('dblclick', endDraw))
 
     } 
     else if (target.value === "export") {
