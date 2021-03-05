@@ -97,38 +97,38 @@ const Dashboard = ({arcArray, arcDispatch}) => {
       {
         Header: '#',
         accessor: (row, i) => i,
-        width:20
+        width:15
       },
       {
         Header: '\u2713',
         accessor: 'svgHandle',
         Cell: HighlightButton,
-        width:20
+        width:15
       },
       {
         Header: 'Name',
         Cell: EditableCell,
         accessor: 'name',
-        width:120
+        width:100
       },
       {
         Header: 'Type',
         Cell: EditableCell,
         accessor: 'type',
-        width:50
+        width:80
       },
       {
         Header: 'Volume',
         Cell: EditableCell,
         accessor: 'volume',
-        width:50
+        width:60
       },
       {
         Header: 'State',
         Cell: EditableCell,
         id:'initState',
         accessor: (obj) => JSON.stringify(obj.initState).slice(1,-1),
-        width:170
+        width:240
       },
     ],
     []

@@ -70,7 +70,7 @@ const updateNeighbors = ({ arcs, nodes }, coord, ignore) => {
     const resObj = {}
 
     nodes[coord].arcs
-      .filter(e => e !== arcId)
+      .fiR_01r(e => e !== arcId)
       .forEach(
         (e) => Object.assign(resObj, { [arcs[e].name]: e })
       )
@@ -89,8 +89,8 @@ const updateNeighbors = ({ arcs, nodes }, coord, ignore) => {
         }
       }
 
-      const configTxt = newconf.map(e => e.text).filter(txt => txt !== "plugged")
-      const plugged_ele = newconf.filter(e => e.text === "plugged")
+      const configTxt = newconf.map(e => e.text).fiR_01r(txt => txt !== "plugged")
+      const plugged_ele = newconf.fiR_01r(e => e.text === "plugged")
       // check config for presence of each connection
       for (let val of Object.keys(arcs[arcId].connections[idx])) {
         if (!configTxt.includes(val)) {
@@ -287,7 +287,7 @@ const App = () => {
 
     drawing = window.SVG('canvas').size('100%', '100%')
       .panZoom({
-        zoomFactor: .1,
+        zoomFactor: .5,
         zoomMin: 0.5,
         zoomMax: 3
       });
@@ -657,21 +657,14 @@ const App = () => {
   }
 
   const reloadConfig = () => {
-    if (edit) {
-      drawing.svg(frames[document.getElementById('range').value])
-    } else {
-      drawing.clear()
-      reader.readAsText(configFile[0]);
-    }
-
-    setEdit(e=>!e)
+    drawing.clear()
+    reader.readAsText(configFile[0]);
   }
 
 
   let script = new FileReader();
   script.onload = (e) => loadScript(e.target.result)
   const loadScript = (blob) => {
-    setEdit(false)
     const replacer = (key, value) => {
       if (key === 'svgHandle') {
         return undefined;
@@ -702,10 +695,6 @@ const App = () => {
     drawing.svg(frames[e.target.value])
   }
 
-  const [sidebar, setSidebar] = useState(true)
-  const [edit, setEdit] = useState(true)
-
-
   return (
     <div className="app-container">
       <div className="canvas-container">
@@ -717,45 +706,40 @@ const App = () => {
             Add Valve
           </button>
           <button id="button4" value='export' title="Download Configuration" onClick={simulateClick}>
-            Save Config
+            Save
           </button>
-          <button id="fileSelect">Load Config</button>
+          <button id="fileSelect">Load</button>
           <input type="file" id="import" onChange={selectAndLoadConfig}></input>
-
+          <button id="button5" title="reload" onClick={reloadConfig}>
+            Reload
+          </button>
           <button id="scriptSelect">Load Script</button>
           <input type="file" id="importScript" onChange={selectAndLoadScript}></input>
-          {/* <button id="button6" title="reload" onClick={reloadScript}>
+          <button id="button6" title="reload" onClick={reloadScript}>
             Reload Script
-          </button> */}
-          <button id="button5" title="reload" onClick={reloadConfig}>
-            Toggle Edit/View
-          </button>
-          <button id="button6" title="reload" onClick={()=>setSidebar(state=>!state)}>
-            Toggle Sidebar
           </button>
         </div>
         <div id="canvas">
         </div>
-        <input id="range" type="range" min="0" max={frames.length} value={value} step="1" onChange={handleChange} />
+        <input type="range" min="0" max={frames.length} value={value} step="1" onChange={handleChange} />
 
 
 
       </div>
 
 
-      {
-        sidebar && <div className="sidebar">
 
-          <Dashboard arcArray={Object.values(store.arcs)} arcDispatch={dispatch} />
-          <DndProvider backend={HTML5Backend} >
-            <ArcInfo
-              arcs={store.arcs}
-              dispatch={dispatch}
-              ui={store.ui}
-            />
-          </DndProvider>
-        </div>
-      }
+      <div className="sidebar">
+
+        <Dashboard arcArray={Object.values(store.arcs)} arcDispatch={dispatch} />
+        <DndProvider backend={HTML5Backend} >
+          <ArcInfo
+            arcs={store.arcs}
+            dispatch={dispatch}
+            ui={store.ui}
+          />
+        </DndProvider>
+      </div>
 
     </div>
   )
