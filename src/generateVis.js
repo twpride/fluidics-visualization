@@ -111,7 +111,7 @@ const getCumulativeVol = (path) => {
     lineVolumes.push(line.volume)
   }
 
-  lineStates.push(['Air', 10000000]) // ambient air is always last fluid in path
+  lineStates.push(['RXX', 10000000]) // ambient RXX is always last fluid in path
 
   const cumLineVols = cumsum(lineVolumes)
   const cumFluidVols = cumsum(lineStates.map(e => e[1]))
@@ -201,17 +201,17 @@ export const runScript = (script, runState, drawing) => {
   }
 
   const mergeFluids = (tub) =>{
-    let airVol = 0
+    let RXXVol = 0
     let bulkVol = 0
     for (let i of tub.initState){
-      if (i[0]!=="Air") bulkVol+=i[1]
-      else airVol+=i[1]
+      if (i[0]!=="") bulkVol+=i[1]
+      else RXXVol+=i[1]
     }  
 
     tub.initState=[]
 
     if (bulkVol!==0) tub.initState.push(["Bulk_Fluid",bulkVol])  
-    if (airVol!==0) tub.initState.push(["Air",airVol])     
+    if (RXXVol!==0) tub.initState.push(["RXX",RXXVol])     
   }
 
   const updateState = (path) => {
@@ -296,7 +296,7 @@ export const runScript = (script, runState, drawing) => {
     }
   
     for (j = 0; j < midIdx.length; j++) {
-      if (arc.type==='supply' && arc.initState[j][0]==='Air') continue
+      if (arc.type==='supply' && arc.initState[j][0]==='RXX') continue
       plot.text((arc.initState[j][1]/factor).toPrecision(prec))
           .font({ size: 10 })
           .move(...elements[midIdx[j]])
@@ -373,7 +373,7 @@ export const runScript = (script, runState, drawing) => {
       const linePlot = plot.group()
       drawState(e, linePlot)
       e.svgHandle = linePlot
-      if (e.type.toLowerCase()==='supply' && e.name.toLowerCase()!=='air') {
+      if (e.type.toLowerCase()==='supply' && e.name.toLowerCase()!=='RXX') {
         plot.text(e.name)
         .font({ size: 10 })
         .move(...e.geom[0])

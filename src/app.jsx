@@ -39,10 +39,10 @@ const initValve = (elem) => ({
   type: 'valve',
   name: elem.attr().id,
   geom: [[elem.attr().cx, elem.attr().cy]],
-  volume: 25,
+  volume: 3,
   initState: [],
   connections: [{}],
-  config: [...Array(25).keys()].map(x => ({ id: x, text: 'plugged' })),
+  config: [...Array(3).keys()].map(x => ({ id: x, text: 'plugged' })),
   svgHandle: elem,
 })
 
