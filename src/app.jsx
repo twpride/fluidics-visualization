@@ -311,7 +311,8 @@ const App = () => {
     }, false);
 
     document.addEventListener('keydown', e => {
-      if (e.keyCode === 27) {
+      // if (e.keyCode === 27) {
+      if (e.key === 'Escape') {
         for (let geom of drawing.children()) {
           if (geom._memory
             && geom._memory._selectHandler
@@ -557,11 +558,15 @@ const App = () => {
   const simulateClick = (event) => {
     let geom;
     const target = event.target
+    console.log(target)
 
     const endDraw = (e) => {
-      geom.id(Date.now())
+      // if (e.key!="Enter") return;
+      // geom.id(Math.floor(Date.now()%31536000000/1000))
+      geom.id("l_"+new Date().getUTCMilliseconds().toString(36))
       geom.draw('done');
       geom.off('drawstart');
+      // geom.fire('dblclick', { noDispatch: true })
       dispatch([INIT_LINE, geom])
 
       const arcArr = geom.array().valueOf()
@@ -574,16 +579,16 @@ const App = () => {
       drawing.on('mousedown', (e) => {
         p.x = e.clientX - (offset.x - window.pageXOffset);
         p.y = e.clientY - (offset.y - window.pageYOffset)
-        const newPt = p.matrixTransform(canvasTranform);
+        const newPt = p.matrixTransform(drawing.node.getScreenCTM().inverse());
         let temp
 
-        for (var i in newPt) {
+        for (var i in newPt) { // snapping algo
           temp = newPt[i] % 10;
           newPt[i] -= (temp < 10 / 2 ? temp : temp - 10) + (temp < 0 ? 10 : 0);
         }
 
         geom = drawing.circle(6)
-          .id(Date.now())
+          .id("v_"+new Date().getUTCMilliseconds().toString(36))
           .center(newPt.x, newPt.y)
         attachValveHandlers(geom, dispatch)
         drawing.off('mousedown')
@@ -601,9 +606,11 @@ const App = () => {
       geom = drawing.polyline()
       geom.draw({ snapToGrid: 10 })
       attachLineHandlers(geom, dispatch)
-      geom.on('drawstart', () => document.addEventListener('dblclick', endDraw))
+      geom.on('drawstart', () => document.addEventListener('keydown', endDraw))
+      // geom.on('drawstart', () => document.addEventListener('dblclick', endDraw))
 
-      geom.on('drawstop', () => document.removeEventListener('dblclick', endDraw))
+      geom.on('drawstop', () => document.removeEventListener('keydown', endDraw))
+      // geom.on('drawstop', () => document.removeEventListener('dblclick', endDraw))
 
     }
     else if (target.value === "export") {
@@ -624,6 +631,8 @@ const App = () => {
       element.click();
       document.body.removeChild(element);
     }
+
+    target.blur()
   }
 
   let reader = new FileReader();

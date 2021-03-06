@@ -1,0 +1,3571 @@
+{
+  "ui": {
+    "focusArc": [
+      "FC",
+      "L_FC_IN",
+      "L_FC_OUT"
+    ]
+  },
+  "arcs": {
+    "1058": {
+      "id": 1058,
+      "type": "valve",
+      "name": "v7",
+      "geom": [
+        [
+          700,
+          420
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "L_RXX_Remove_NC": "L_RXX_Remove_NC",
+          "L_RXX_Remove": "L_RXX_Remove"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "L_RXX_Remove_NC"
+        },
+        {
+          "id": 1,
+          "text": "L_RXX_Remove"
+        }
+      ]
+    },
+    "1059": {
+      "id": 1059,
+      "type": "valve",
+      "name": "v8",
+      "geom": [
+        [
+          740,
+          420
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "L_02Inlet": "L_02Inlet",
+          "L_02Outlet": "L_02Outlet"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "L_02Inlet"
+        },
+        {
+          "id": 1,
+          "text": "L_02Outlet"
+        }
+      ]
+    },
+    "1060": {
+      "id": 1060,
+      "type": "valve",
+      "name": "v1",
+      "geom": [
+        [
+          100,
+          30
+        ]
+      ],
+      "volume": 3,
+      "initState": [],
+      "connections": [
+        {
+          "PUMP2V1": "PUMP2V1",
+          "L_01": "L_01",
+          "L_FC_OUT": "L_FC_OUT"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "PUMP2V1"
+        },
+        {
+          "id": 2,
+          "text": "L_FC_OUT"
+        },
+        {
+          "id": 1,
+          "text": "L_01"
+        }
+      ]
+    },
+    "1061": {
+      "id": 1061,
+      "type": "valve",
+      "name": "v6",
+      "geom": [
+        [
+          200,
+          410
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "L_R04_NC": "L_R04_NC",
+          "L_R04": "L_R04"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "L_R04_NC"
+        },
+        {
+          "id": 1,
+          "text": "L_R04"
+        }
+      ]
+    },
+    "1086": {
+      "id": 1086,
+      "type": "valve",
+      "name": "v5",
+      "geom": [
+        [
+          230,
+          410
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "RXX": "RXX_Remove",
+          "L_R05_RXX_NC": "L_R05_RXX_NC"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "RXX"
+        },
+        {
+          "text": "L_R05_RXX_NC",
+          "id": 1
+        }
+      ]
+    },
+    "1087": {
+      "id": 1087,
+      "type": "valve",
+      "name": "v4",
+      "geom": [
+        [
+          260,
+          410
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "L_R05_NC": "L_R05_NC",
+          "L_R05": "L_R05"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "L_R05_NC"
+        },
+        {
+          "id": 1,
+          "text": "L_R05"
+        }
+      ]
+    },
+    "1088": {
+      "id": 1088,
+      "type": "valve",
+      "name": "v3",
+      "geom": [
+        [
+          380,
+          410
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "L_R01": "L_R01",
+          "L_R01_NC": "L_R01_NC"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "L_R01"
+        },
+        {
+          "id": 1,
+          "text": "L_R01_NC"
+        }
+      ]
+    },
+    "1089": {
+      "id": 1089,
+      "type": "valve",
+      "name": "v2",
+      "geom": [
+        [
+          420,
+          410
+        ]
+      ],
+      "volume": 2,
+      "initState": [],
+      "connections": [
+        {
+          "L_R02_NC": "L_R02_NC",
+          "L_R02": "L_R02"
+        }
+      ],
+      "config": [
+        {
+          "id": 0,
+          "text": "L_R02_NC"
+        },
+        {
+          "id": 1,
+          "text": "L_R02"
+        }
+      ]
+    },
+    "1117": {
+      "id": 1117,
+      "type": "valve",
+      "name": "rotary",
+      "geom": [
+        [
+          240,
+          120
+        ]
+      ],
+      "volume": 25,
+      "initState": [],
+      "connections": [
+        {
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        }
+      ],
+      "config": [
+        {
+          "text": "RCU",
+          "id": 0
+        },
+        {
+          "text": "plugged",
+          "id": 2
+        },
+        {
+          "text": "plugged",
+          "id": 13
+        },
+        {
+          "text": "R08_rvtosip",
+          "id": 3
+        },
+        {
+          "text": "R07_rvtosip",
+          "id": 4
+        },
+        {
+          "text": "R09_rvtosip",
+          "id": 5
+        },
+        {
+          "text": "R03_rvtosip",
+          "id": 6
+        },
+        {
+          "text": "R99_rvtosip",
+          "id": 7
+        },
+        {
+          "text": "R10_rvtosip",
+          "id": 8
+        },
+        {
+          "text": "R11_rvtosip",
+          "id": 9
+        },
+        {
+          "text": "R12_rvtosip",
+          "id": 10
+        },
+        {
+          "text": "R13_rvtosip",
+          "id": 11
+        },
+        {
+          "text": "R052_rvtosip",
+          "id": 12
+        },
+        {
+          "text": "plugged",
+          "id": 14
+        },
+        {
+          "text": "plugged",
+          "id": 15
+        },
+        {
+          "text": "plugged",
+          "id": 16
+        },
+        {
+          "text": "plugged",
+          "id": 17
+        },
+        {
+          "text": "plugged",
+          "id": 18
+        },
+        {
+          "text": "plugged",
+          "id": 19
+        },
+        {
+          "text": "plugged",
+          "id": 20
+        },
+        {
+          "text": "plugged",
+          "id": 21
+        },
+        {
+          "text": "plugged",
+          "id": 22
+        },
+        {
+          "text": "plugged",
+          "id": 23
+        },
+        {
+          "text": "plugged",
+          "id": 24
+        },
+        {
+          "id": 1,
+          "text": "RXX"
+        }
+      ]
+    },
+    "2474": {
+      "id": 2474,
+      "type": "valve",
+      "name": "waste",
+      "geom": [
+        [
+          30,
+          100
+        ]
+      ],
+      "volume": 3,
+      "initState": [],
+      "connections": [
+        {
+          "PUMP2V1": "PUMP2V1",
+          "pump": "1591119494244",
+          "waste_line": "1591680423010"
+        }
+      ],
+      "config": [
+        {
+          "text": "pump",
+          "id": 1
+        },
+        {
+          "text": "PUMP2V1",
+          "id": 0
+        },
+        {
+          "id": 2,
+          "text": "waste_line"
+        }
+      ]
+    },
+    "L_01": {
+      "id": "L_01",
+      "type": "line",
+      "name": "L_01",
+      "geom": [
+        [
+          100,
+          30
+        ],
+        [
+          137,
+          46
+        ],
+        [
+          622,
+          47
+        ],
+        [
+          695,
+          95
+        ],
+        [
+          696,
+          221
+        ],
+        [
+          713,
+          236
+        ],
+        [
+          712,
+          287
+        ],
+        [
+          700,
+          300
+        ],
+        [
+          700,
+          340
+        ]
+      ],
+      "volume": 1064,
+      "initState": [
+        [
+          "R13",
+          1064
+        ]
+      ],
+      "connections": [
+        {
+          "PUMP2V1": "PUMP2V1",
+          "L_FC_OUT": "L_FC_OUT",
+          "v1": 1060
+        },
+        [
+          "RCU",
+          "L_02Inlet",
+          "L_RXX_Remove_NC"
+        ]
+      ]
+    },
+    "V45LINE": {
+      "id": "V45LINE",
+      "type": "line",
+      "name": "V45LINE",
+      "geom": [
+        [
+          260,
+          440
+        ],
+        [
+          230,
+          440
+        ]
+      ],
+      "volume": 3,
+      "initState": [
+        [
+          "R13",
+          3
+        ]
+      ],
+      "connections": [
+        [
+          "L_R05_NC",
+          "L_R05_X"
+        ],
+        [
+          "L_R04_NC",
+          "L_R05_RXX_NC"
+        ]
+      ]
+    },
+    "L_R05_X": {
+      "id": "L_R05_X",
+      "type": "line",
+      "name": "L_R05_X",
+      "geom": [
+        [
+          790,
+          340
+        ],
+        [
+          789,
+          273
+        ],
+        [
+          604,
+          274
+        ],
+        [
+          550,
+          460
+        ],
+        [
+          310,
+          460
+        ],
+        [
+          310,
+          440
+        ],
+        [
+          260,
+          440
+        ]
+      ],
+      "volume": 173,
+      "initState": [
+        [
+          "R13",
+          173
+        ]
+      ],
+      "connections": [
+        [
+          "L_02Outlet",
+          "L_R01-R05_X"
+        ],
+        [
+          "V45LINE",
+          "L_R05_NC"
+        ]
+      ]
+    },
+    "L_R02_R01": {
+      "id": "L_R02_R01",
+      "type": "line",
+      "name": "L_R02_R01",
+      "geom": [
+        [
+          820,
+          340
+        ],
+        [
+          820,
+          240
+        ],
+        [
+          590,
+          240
+        ],
+        [
+          521,
+          441
+        ],
+        [
+          420,
+          440
+        ]
+      ],
+      "volume": 171,
+      "initState": [
+        [
+          "R13",
+          171
+        ]
+      ],
+      "connections": [
+        [
+          "L_R01-R05_X",
+          "L_FC_IN"
+        ],
+        [
+          "L_R02_NC",
+          "L_R01_NC"
+        ]
+      ]
+    },
+    "L_FC_OUT": {
+      "id": "L_FC_OUT",
+      "type": "line",
+      "name": "L_FC_OUT",
+      "geom": [
+        [
+          100,
+          30
+        ],
+        [
+          140,
+          10
+        ],
+        [
+          730,
+          10
+        ]
+      ],
+      "volume": 1145,
+      "initState": [
+        [
+          "R13",
+          1145
+        ]
+      ],
+      "connections": [
+        {
+          "PUMP2V1": "PUMP2V1",
+          "L_01": "L_01",
+          "v1": 1060
+        },
+        {
+          "FC": "FC"
+        }
+      ]
+    },
+    "PUMP2V1": {
+      "id": "PUMP2V1",
+      "type": "line",
+      "name": "PUMP2V1",
+      "geom": [
+        [
+          30,
+          100
+        ],
+        [
+          60,
+          30
+        ],
+        [
+          100,
+          30
+        ]
+      ],
+      "volume": 321,
+      "initState": [
+        [
+          "R13",
+          321
+        ]
+      ],
+      "connections": [
+        {
+          "pump": "1591119494244",
+          "waste_line": "1591680423010",
+          "waste": 2474
+        },
+        {
+          "L_01": "L_01",
+          "L_FC_OUT": "L_FC_OUT",
+          "v1": 1060
+        }
+      ]
+    },
+    "FC": {
+      "id": "FC",
+      "type": "line",
+      "name": "FC",
+      "geom": [
+        [
+          730,
+          10
+        ],
+        [
+          730,
+          80
+        ],
+        [
+          860,
+          80
+        ],
+        [
+          880,
+          90
+        ],
+        [
+          880,
+          120
+        ],
+        [
+          860,
+          130
+        ],
+        [
+          730,
+          130
+        ],
+        [
+          730,
+          190
+        ]
+      ],
+      "volume": 60,
+      "initState": [
+        [
+          "R09",
+          60
+        ]
+      ],
+      "connections": [
+        {
+          "L_FC_OUT": "L_FC_OUT"
+        },
+        {
+          "L_FC_IN": "L_FC_IN"
+        }
+      ]
+    },
+    "L_R04_NC": {
+      "id": "L_R04_NC",
+      "type": "line",
+      "name": "L_R04_NC",
+      "geom": [
+        [
+          230,
+          440
+        ],
+        [
+          200,
+          430
+        ],
+        [
+          200,
+          410
+        ]
+      ],
+      "volume": 5,
+      "initState": [
+        [
+          "R13",
+          5
+        ]
+      ],
+      "connections": [
+        [
+          "L_R05_RXX_NC",
+          "V45LINE"
+        ],
+        {
+          "v6": 1061,
+          "L_R04": "L_R04"
+        }
+      ]
+    },
+    "L_R01": {
+      "id": "L_R01",
+      "type": "sipper",
+      "name": "L_R01",
+      "geom": [
+        [
+          380,
+          410
+        ],
+        [
+          380,
+          200
+        ],
+        [
+          360,
+          200
+        ],
+        [
+          360,
+          220
+        ]
+      ],
+      "volume": 60,
+      "initState": [
+        [
+          "R13",
+          60
+        ]
+      ],
+      "connections": [
+        {
+          "v3": 1088,
+          "L_R01_NC": "L_R01_NC"
+        },
+        [
+          "R01"
+        ]
+      ]
+    },
+    "R01": {
+      "id": "R01",
+      "type": "supply",
+      "name": "R01",
+      "geom": [
+        [
+          360,
+          300
+        ],
+        [
+          360,
+          220
+        ]
+      ],
+      "volume": 2400,
+      "initState": [
+        [
+          "RXX",
+          1170
+        ],
+        [
+          "R01",
+          1230
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "L_R01"
+        ]
+      ]
+    },
+    "L_R02": {
+      "id": "L_R02",
+      "type": "sipper",
+      "name": "L_R02",
+      "geom": [
+        [
+          420,
+          410
+        ],
+        [
+          420,
+          390
+        ],
+        [
+          450,
+          380
+        ],
+        [
+          450,
+          200
+        ],
+        [
+          430,
+          200
+        ],
+        [
+          430,
+          220
+        ]
+      ],
+      "volume": 48,
+      "initState": [
+        [
+          "R13",
+          48
+        ]
+      ],
+      "connections": [
+        {
+          "L_R02_NC": "L_R02_NC",
+          "v2": 1089
+        },
+        [
+          "R02"
+        ]
+      ]
+    },
+    "L_R05": {
+      "id": "L_R05",
+      "type": "sipper",
+      "name": "L_R05",
+      "geom": [
+        [
+          260,
+          410
+        ],
+        [
+          260,
+          390
+        ],
+        [
+          520,
+          360
+        ],
+        [
+          520,
+          200
+        ],
+        [
+          500,
+          200
+        ],
+        [
+          500,
+          220
+        ]
+      ],
+      "volume": 44,
+      "initState": [
+        [
+          "R13",
+          44
+        ]
+      ],
+      "connections": [
+        {
+          "v4": 1087,
+          "L_R05_NC": "L_R05_NC"
+        },
+        [
+          "R05"
+        ]
+      ]
+    },
+    "L_R04": {
+      "id": "L_R04",
+      "type": "sipper",
+      "name": "L_R04",
+      "geom": [
+        [
+          200,
+          410
+        ],
+        [
+          200,
+          390
+        ],
+        [
+          181,
+          377
+        ],
+        [
+          180,
+          200
+        ],
+        [
+          160,
+          200
+        ],
+        [
+          160,
+          220
+        ]
+      ],
+      "volume": 67,
+      "initState": [
+        [
+          "R13",
+          67
+        ]
+      ],
+      "connections": [
+        {
+          "v6": 1061,
+          "L_R04_NC": "L_R04_NC"
+        },
+        [
+          "R04"
+        ]
+      ]
+    },
+    "R02": {
+      "id": "R02",
+      "type": "supply",
+      "name": "R02",
+      "geom": [
+        [
+          431,
+          299
+        ],
+        [
+          430,
+          220
+        ]
+      ],
+      "volume": 50000,
+      "initState": [
+        [
+          "RXX",
+          24200
+        ],
+        [
+          "R02",
+          25800
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "L_R02"
+        ]
+      ]
+    },
+    "R05": {
+      "id": "R05",
+      "type": "supply",
+      "name": "R05",
+      "geom": [
+        [
+          500,
+          300
+        ],
+        [
+          500,
+          220
+        ]
+      ],
+      "volume": 2400,
+      "initState": [
+        [
+          "RXX",
+          2250
+        ],
+        [
+          "R05",
+          200
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "L_R05"
+        ]
+      ]
+    },
+    "R04": {
+      "id": "R04",
+      "type": "supply",
+      "name": "R04",
+      "geom": [
+        [
+          160,
+          300
+        ],
+        [
+          160,
+          220
+        ]
+      ],
+      "volume": 10000,
+      "initState": [
+        [
+          "RXX",
+          3000
+        ],
+        [
+          "R04",
+          7000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "L_R04"
+        ]
+      ]
+    },
+    "R052_rvtosip": {
+      "id": "R052_rvtosip",
+      "type": "sipper",
+      "name": "R052_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          288,
+          86
+        ],
+        [
+          470,
+          170
+        ],
+        [
+          470,
+          220
+        ]
+      ],
+      "volume": 85,
+      "initState": [
+        [
+          "R13",
+          85
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R052"
+        ]
+      ]
+    },
+    "R052": {
+      "id": "R052",
+      "type": "supply",
+      "name": "R052",
+      "geom": [
+        [
+          470,
+          300
+        ],
+        [
+          470,
+          220
+        ]
+      ],
+      "volume": 2400,
+      "initState": [
+        [
+          "RXX",
+          720
+        ],
+        [
+          "R052",
+          1680
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R052_rvtosip"
+        ]
+      ]
+    },
+    "R03_rvtosip": {
+      "id": "R03_rvtosip",
+      "type": "sipper",
+      "name": "R03_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          291,
+          104
+        ],
+        [
+          400,
+          169
+        ],
+        [
+          400,
+          220
+        ]
+      ],
+      "volume": 85,
+      "initState": [
+        [
+          "R13",
+          85
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R03"
+        ]
+      ]
+    },
+    "R03": {
+      "id": "R03",
+      "type": "supply",
+      "name": "R03",
+      "geom": [
+        [
+          400,
+          300
+        ],
+        [
+          400,
+          220
+        ]
+      ],
+      "volume": 2400,
+      "initState": [
+        [
+          "RXX",
+          1400
+        ],
+        [
+          "R03",
+          1000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R03_rvtosip"
+        ]
+      ]
+    },
+    "R10_rvtosip": {
+      "id": "R10_rvtosip",
+      "type": "sipper",
+      "name": "R10_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          330,
+          140
+        ],
+        [
+          330,
+          220
+        ]
+      ],
+      "volume": 85,
+      "initState": [
+        [
+          "R13",
+          85
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        {
+          "R10": "R10"
+        }
+      ]
+    },
+    "R10": {
+      "id": "R10",
+      "type": "supply",
+      "name": "R10",
+      "geom": [
+        [
+          331,
+          300
+        ],
+        [
+          330,
+          220
+        ]
+      ],
+      "volume": 2400,
+      "initState": [
+        [
+          "RXX",
+          1400
+        ],
+        [
+          "R10",
+          1000
+        ]
+      ],
+      "connections": [
+        [],
+        {
+          "R10_rvtosip": "R10_rvtosip"
+        }
+      ]
+    },
+    "R99_rvtosip": {
+      "id": "R99_rvtosip",
+      "type": "sipper",
+      "name": "R99_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          300,
+          167
+        ],
+        [
+          300,
+          220
+        ]
+      ],
+      "volume": 178,
+      "initState": [
+        [
+          "R13",
+          178
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R99"
+        ]
+      ]
+    },
+    "R99": {
+      "id": "R99",
+      "type": "supply",
+      "name": "R99",
+      "geom": [
+        [
+          300,
+          300
+        ],
+        [
+          300,
+          220
+        ]
+      ],
+      "volume": 5000,
+      "initState": [
+        [
+          "RXX",
+          1500
+        ],
+        [
+          "R99",
+          3500
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R99_rvtosip"
+        ]
+      ]
+    },
+    "R07_rvtosip": {
+      "id": "R07_rvtosip",
+      "type": "sipper",
+      "name": "R07_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          234,
+          75
+        ],
+        [
+          149,
+          75
+        ],
+        [
+          70,
+          130
+        ],
+        [
+          70,
+          220
+        ]
+      ],
+      "volume": 178,
+      "initState": [
+        [
+          "R13",
+          178
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R07"
+        ]
+      ]
+    },
+    "R07": {
+      "id": "R07",
+      "type": "supply",
+      "name": "R07",
+      "geom": [
+        [
+          70,
+          300
+        ],
+        [
+          70,
+          220
+        ]
+      ],
+      "volume": 125000,
+      "initState": [
+        [
+          "RXX",
+          25000
+        ],
+        [
+          "R07",
+          100000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R07_rvtosip"
+        ]
+      ]
+    },
+    "R09_rvtosip": {
+      "id": "R09_rvtosip",
+      "type": "sipper",
+      "name": "R09_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          210,
+          90
+        ],
+        [
+          100,
+          140
+        ],
+        [
+          100,
+          220
+        ]
+      ],
+      "volume": 178,
+      "initState": [
+        [
+          "R13",
+          178
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R09"
+        ]
+      ]
+    },
+    "R09": {
+      "id": "R09",
+      "type": "supply",
+      "name": "R09",
+      "geom": [
+        [
+          100,
+          300
+        ],
+        [
+          100,
+          220
+        ]
+      ],
+      "volume": 230000,
+      "initState": [
+        [
+          "RXX",
+          30000
+        ],
+        [
+          "R09",
+          200000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R09_rvtosip"
+        ]
+      ]
+    },
+    "R08_rvtosip": {
+      "id": "R08_rvtosip",
+      "type": "sipper",
+      "name": "R08_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          190,
+          110
+        ],
+        [
+          137,
+          153
+        ],
+        [
+          130,
+          220
+        ]
+      ],
+      "volume": 178,
+      "initState": [
+        [
+          "R13",
+          178
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290"
+        },
+        [
+          "R08"
+        ]
+      ]
+    },
+    "R08": {
+      "id": "R08",
+      "type": "supply",
+      "name": "R08",
+      "geom": [
+        [
+          130,
+          300
+        ],
+        [
+          130,
+          220
+        ]
+      ],
+      "volume": 186000,
+      "initState": [
+        [
+          "RXX",
+          30000
+        ],
+        [
+          "R08",
+          156000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R08_rvtosip"
+        ]
+      ]
+    },
+    "L_FC_IN": {
+      "id": "L_FC_IN",
+      "type": "line",
+      "name": "L_FC_IN",
+      "geom": [
+        [
+          730,
+          190
+        ],
+        [
+          870,
+          190
+        ],
+        [
+          870,
+          340
+        ],
+        [
+          820,
+          340
+        ]
+      ],
+      "volume": 26,
+      "initState": [
+        [
+          "R13",
+          26
+        ]
+      ],
+      "connections": [
+        {
+          "FC": "FC"
+        },
+        [
+          "L_R01-R05_X",
+          "L_R02_R01"
+        ]
+      ]
+    },
+    "RCU": {
+      "id": "RCU",
+      "type": "line",
+      "name": "RCU",
+      "geom": [
+        [
+          700,
+          340
+        ],
+        [
+          620,
+          340
+        ],
+        [
+          620,
+          300
+        ],
+        [
+          632,
+          286
+        ],
+        [
+          632,
+          234
+        ],
+        [
+          620,
+          220
+        ],
+        [
+          620,
+          70
+        ],
+        [
+          260,
+          70
+        ],
+        [
+          240,
+          120
+        ]
+      ],
+      "volume": 180,
+      "initState": [
+        [
+          "R13",
+          180
+        ]
+      ],
+      "connections": [
+        [
+          "L_01",
+          "L_02Inlet",
+          "L_RXX_Remove_NC"
+        ],
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        }
+      ]
+    },
+    "R11_rvtosip": {
+      "id": "R11_rvtosip",
+      "type": "sipper",
+      "name": "R11_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          210,
+          160
+        ],
+        [
+          210,
+          220
+        ]
+      ],
+      "volume": 85,
+      "initState": [
+        [
+          "R13",
+          85
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R11"
+        ]
+      ]
+    },
+    "R11": {
+      "id": "R11",
+      "type": "supply",
+      "name": "R11",
+      "geom": [
+        [
+          210,
+          300
+        ],
+        [
+          210,
+          220
+        ]
+      ],
+      "volume": 5000,
+      "initState": [
+        [
+          "RXX",
+          1500
+        ],
+        [
+          "R11",
+          3500
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R11_rvtosip"
+        ]
+      ]
+    },
+    "R13_rvtosip": {
+      "id": "R13_rvtosip",
+      "type": "sipper",
+      "name": "R13_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          240,
+          170
+        ],
+        [
+          240,
+          220
+        ]
+      ],
+      "volume": 178,
+      "initState": [
+        [
+          "R13",
+          178
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R13"
+        ]
+      ]
+    },
+    "R13": {
+      "id": "R13",
+      "type": "supply",
+      "name": "R13",
+      "geom": [
+        [
+          240,
+          300
+        ],
+        [
+          240,
+          220
+        ]
+      ],
+      "volume": 10000,
+      "initState": [
+        [
+          "RXX",
+          3000
+        ],
+        [
+          "R13",
+          7000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R13_rvtosip"
+        ]
+      ]
+    },
+    "R12_rvtosip": {
+      "id": "R12_rvtosip",
+      "type": "sipper",
+      "name": "R12_rvtosip",
+      "geom": [
+        [
+          240,
+          120
+        ],
+        [
+          270,
+          180
+        ],
+        [
+          270,
+          220
+        ]
+      ],
+      "volume": 178,
+      "initState": [
+        [
+          "R13",
+          178
+        ]
+      ],
+      "connections": [
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "RXX": "1591118605290",
+          "R08_rvtosip": "R08_rvtosip"
+        },
+        [
+          "R12"
+        ]
+      ]
+    },
+    "R12": {
+      "id": "R12",
+      "type": "supply",
+      "name": "R12",
+      "geom": [
+        [
+          270,
+          300
+        ],
+        [
+          270,
+          220
+        ]
+      ],
+      "volume": 10000,
+      "initState": [
+        [
+          "RXX",
+          3000
+        ],
+        [
+          "R12",
+          7000
+        ]
+      ],
+      "connections": [
+        [],
+        [
+          "R12_rvtosip"
+        ]
+      ]
+    },
+    "L_R01-R05_X": {
+      "id": "L_R01-R05_X",
+      "type": "line",
+      "name": "L_R01-R05_X",
+      "geom": [
+        [
+          820,
+          340
+        ],
+        [
+          790,
+          340
+        ]
+      ],
+      "volume": 3,
+      "initState": [
+        [
+          "R13",
+          3
+        ]
+      ],
+      "connections": [
+        [
+          "L_R02_R01",
+          "L_FC_IN"
+        ],
+        [
+          "L_02Outlet",
+          "L_R05_X"
+        ]
+      ]
+    },
+    "L_RXX_Remove_NC": {
+      "id": "L_RXX_Remove_NC",
+      "type": "line",
+      "name": "L_RXX_Remove_NC",
+      "geom": [
+        [
+          700,
+          340
+        ],
+        [
+          700,
+          420
+        ]
+      ],
+      "volume": 4,
+      "initState": [
+        [
+          "R13",
+          4
+        ]
+      ],
+      "connections": [
+        [
+          "RCU",
+          "L_01",
+          "L_02Inlet"
+        ],
+        {
+          "v7": 1058,
+          "L_RXX_Remove": "L_RXX_Remove"
+        }
+      ]
+    },
+    "L_RXX_Remove": {
+      "id": "L_RXX_Remove",
+      "type": "line",
+      "name": "L_RXX_Remove",
+      "geom": [
+        [
+          700,
+          420
+        ],
+        [
+          640,
+          480
+        ],
+        [
+          110,
+          480
+        ],
+        [
+          90,
+          380
+        ],
+        [
+          50,
+          380
+        ]
+      ],
+      "volume": 47,
+      "initState": [
+        [
+          "R13",
+          47
+        ]
+      ],
+      "connections": [
+        {
+          "v7": 1058,
+          "L_RXX_Remove_NC": "L_RXX_Remove_NC"
+        },
+        {
+          "waste_line": "1591680423010",
+          "waste": "1591119499202"
+        }
+      ]
+    },
+    "RXX_Remove": {
+      "id": "RXX_Remove",
+      "type": "supply",
+      "name": "RXX",
+      "geom": [
+        [
+          230,
+          410
+        ],
+        [
+          230,
+          400
+        ]
+      ],
+      "volume": 230000,
+      "initState": [
+        [
+          "RXX",
+          230000
+        ]
+      ],
+      "connections": [
+        {
+          "v5": 1086,
+          "L_R05_RXX_NC": "L_R05_RXX_NC"
+        },
+        {}
+      ]
+    },
+    "L_R02_NC": {
+      "id": "L_R02_NC",
+      "type": "line",
+      "name": "L_R02_NC",
+      "geom": [
+        [
+          420,
+          440
+        ],
+        [
+          420,
+          410
+        ]
+      ],
+      "volume": 1,
+      "initState": [
+        [
+          "R13",
+          1
+        ]
+      ],
+      "connections": [
+        [
+          "L_R02_R01",
+          "L_R01_NC"
+        ],
+        {
+          "L_R02": "L_R02",
+          "v2": 1089
+        }
+      ]
+    },
+    "L_R01_NC": {
+      "id": "L_R01_NC",
+      "type": "line",
+      "name": "L_R01_NC",
+      "geom": [
+        [
+          420,
+          440
+        ],
+        [
+          380,
+          430
+        ],
+        [
+          380,
+          410
+        ]
+      ],
+      "volume": 5,
+      "initState": [
+        [
+          "R13",
+          5
+        ]
+      ],
+      "connections": [
+        [
+          "L_R02_R01",
+          "L_R02_NC"
+        ],
+        {
+          "v3": 1088,
+          "L_R01": "L_R01"
+        }
+      ]
+    },
+    "L_R05_NC": {
+      "id": "L_R05_NC",
+      "type": "line",
+      "name": "L_R05_NC",
+      "geom": [
+        [
+          260,
+          440
+        ],
+        [
+          260,
+          410
+        ]
+      ],
+      "volume": 1,
+      "initState": [
+        [
+          "R13",
+          1
+        ]
+      ],
+      "connections": [
+        [
+          "V45LINE",
+          "L_R05_X"
+        ],
+        {
+          "v4": 1087,
+          "L_R05": "L_R05"
+        }
+      ]
+    },
+    "L_R05_RXX_NC": {
+      "id": "L_R05_RXX_NC",
+      "type": "line",
+      "name": "L_R05_RXX_NC",
+      "geom": [
+        [
+          230,
+          440
+        ],
+        [
+          230,
+          410
+        ]
+      ],
+      "volume": 1,
+      "initState": [
+        [
+          "R13",
+          3
+        ]
+      ],
+      "connections": [
+        [
+          "L_R04_NC",
+          "V45LINE"
+        ],
+        {
+          "v5": 1086,
+          "RXX": "RXX_Remove"
+        }
+      ]
+    },
+    "L_02Inlet": {
+      "id": "L_02Inlet",
+      "type": "line",
+      "name": "L_02Inlet",
+      "geom": [
+        [
+          740,
+          420
+        ],
+        [
+          740,
+          340
+        ],
+        [
+          700,
+          340
+        ]
+      ],
+      "volume": 13,
+      "initState": [
+        [
+          "R13",
+          13
+        ]
+      ],
+      "connections": [
+        {
+          "v8": 1059,
+          "L_02Outlet": "L_02Outlet"
+        },
+        [
+          "RCU",
+          "L_01",
+          "L_RXX_Remove_NC"
+        ]
+      ]
+    },
+    "L_02Outlet": {
+      "id": "L_02Outlet",
+      "type": "line",
+      "name": "L_02Outlet",
+      "geom": [
+        [
+          790,
+          340
+        ],
+        [
+          770,
+          340
+        ],
+        [
+          770,
+          400
+        ],
+        [
+          740,
+          420
+        ]
+      ],
+      "volume": 9,
+      "initState": [
+        [
+          "R13",
+          9
+        ]
+      ],
+      "connections": [
+        [
+          "L_R05_X",
+          "L_R01-R05_X"
+        ],
+        {
+          "L_02Inlet": "L_02Inlet",
+          "v8": 1059
+        }
+      ]
+    },
+    "1591118605290": {
+      "id": "1591118605290",
+      "type": "supply",
+      "name": "RXX",
+      "geom": [
+        [
+          220,
+          130
+        ],
+        [
+          240,
+          120
+        ]
+      ],
+      "volume": 10,
+      "initState": [
+        [
+          "RXX",
+          10
+        ]
+      ],
+      "connections": [
+        {},
+        {
+          "rotary": 1117,
+          "R09_rvtosip": "R09_rvtosip",
+          "R07_rvtosip": "R07_rvtosip",
+          "RCU": "RCU",
+          "R052_rvtosip": "R052_rvtosip",
+          "R03_rvtosip": "R03_rvtosip",
+          "R10_rvtosip": "R10_rvtosip",
+          "R99_rvtosip": "R99_rvtosip",
+          "R12_rvtosip": "R12_rvtosip",
+          "R13_rvtosip": "R13_rvtosip",
+          "R11_rvtosip": "R11_rvtosip",
+          "R08_rvtosip": "R08_rvtosip"
+        }
+      ]
+    },
+    "1591119494244": {
+      "id": "1591119494244",
+      "type": "pump",
+      "name": "pump",
+      "geom": [
+        [
+          30,
+          190
+        ],
+        [
+          30,
+          100
+        ]
+      ],
+      "volume": 0,
+      "initState": [],
+      "connections": [
+        [],
+        {
+          "PUMP2V1": "PUMP2V1",
+          "waste_line": "1591680423010",
+          "waste": 2474
+        }
+      ]
+    },
+    "1591119499202": {
+      "id": "1591119499202",
+      "type": "waste",
+      "name": "waste",
+      "geom": [
+        [
+          50,
+          380
+        ],
+        [
+          50,
+          480
+        ]
+      ],
+      "volume": 400000,
+      "initState": [
+        [
+          "RXX",
+          400000
+        ]
+      ],
+      "connections": [
+        {
+          "waste_line": "1591680423010",
+          "L_RXX_Remove": "L_RXX_Remove"
+        },
+        {}
+      ]
+    },
+    "1591680423010": {
+      "id": "1591680423010",
+      "type": "line",
+      "name": "waste_line",
+      "geom": [
+        [
+          30,
+          100
+        ],
+        [
+          10,
+          80
+        ],
+        [
+          10,
+          320
+        ],
+        [
+          50,
+          380
+        ]
+      ],
+      "volume": 90,
+      "initState": [
+        [
+          "RXX",
+          90
+        ]
+      ],
+      "connections": [
+        {
+          "PUMP2V1": "PUMP2V1",
+          "pump": "1591119494244",
+          "waste": 2474
+        },
+        {
+          "L_RXX_Remove": "L_RXX_Remove",
+          "waste": "1591119499202"
+        }
+      ]
+    }
+  },
+  "nodes": {
+    "431,299": {
+      "id": [
+        431,
+        299
+      ],
+      "arcs": [
+        "R02"
+      ]
+    },
+    "400,300": {
+      "id": [
+        400,
+        300
+      ],
+      "arcs": [
+        "R03"
+      ]
+    },
+    "331,300": {
+      "id": [
+        331,
+        300
+      ],
+      "arcs": [
+        "R10"
+      ]
+    },
+    "300,300": {
+      "id": [
+        300,
+        300
+      ],
+      "arcs": [
+        "R99"
+      ]
+    },
+    "700,340": {
+      "id": [
+        700,
+        340
+      ],
+      "arcs": [
+        "RCU",
+        "L_01",
+        "L_02Inlet",
+        "L_RXX_Remove_NC"
+      ],
+      "valveArc": null
+    },
+    "790,340": {
+      "id": [
+        790,
+        340
+      ],
+      "arcs": [
+        "L_02Outlet",
+        "L_R05_X",
+        "L_R01-R05_X"
+      ],
+      "valveArc": null
+    },
+    "820,340": {
+      "id": [
+        820,
+        340
+      ],
+      "arcs": [
+        "L_R01-R05_X",
+        "L_R02_R01",
+        "L_FC_IN"
+      ],
+      "valveArc": null
+    },
+    "420,440": {
+      "id": [
+        420,
+        440
+      ],
+      "arcs": [
+        "L_R02_R01",
+        "L_R02_NC",
+        "L_R01_NC"
+      ],
+      "valveArc": null
+    },
+    "230,440": {
+      "id": [
+        230,
+        440
+      ],
+      "arcs": [
+        "L_R04_NC",
+        "L_R05_RXX_NC",
+        "V45LINE"
+      ],
+      "valveArc": null
+    },
+    "260,440": {
+      "id": [
+        260,
+        440
+      ],
+      "arcs": [
+        "V45LINE",
+        "L_R05_NC",
+        "L_R05_X"
+      ],
+      "valveArc": null
+    },
+    "500,300": {
+      "id": [
+        500,
+        300
+      ],
+      "arcs": [
+        "R05"
+      ],
+      "valveArc": null
+    },
+    "70,220": {
+      "id": [
+        70,
+        220
+      ],
+      "arcs": [
+        "R07_rvtosip",
+        "R07"
+      ],
+      "valveArc": null
+    },
+    "70,300": {
+      "id": [
+        70,
+        300
+      ],
+      "arcs": [
+        "R07"
+      ],
+      "valveArc": null
+    },
+    "100,220": {
+      "id": [
+        100,
+        220
+      ],
+      "arcs": [
+        "R09",
+        "R09_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "100,300": {
+      "id": [
+        100,
+        300
+      ],
+      "arcs": [
+        "R09"
+      ],
+      "valveArc": null
+    },
+    "130,220": {
+      "id": [
+        130,
+        220
+      ],
+      "arcs": [
+        "R08_rvtosip",
+        "R08"
+      ],
+      "valveArc": null
+    },
+    "130,300": {
+      "id": [
+        130,
+        300
+      ],
+      "arcs": [
+        "R08"
+      ],
+      "valveArc": null
+    },
+    "160,220": {
+      "id": [
+        160,
+        220
+      ],
+      "arcs": [
+        "R04",
+        "L_R04"
+      ],
+      "valveArc": null
+    },
+    "160,300": {
+      "id": [
+        160,
+        300
+      ],
+      "arcs": [
+        "R04"
+      ],
+      "valveArc": null
+    },
+    "210,220": {
+      "id": [
+        210,
+        220
+      ],
+      "arcs": [
+        "R11_rvtosip",
+        "R11"
+      ],
+      "valveArc": null
+    },
+    "210,300": {
+      "id": [
+        210,
+        300
+      ],
+      "arcs": [
+        "R11"
+      ],
+      "valveArc": null
+    },
+    "240,220": {
+      "id": [
+        240,
+        220
+      ],
+      "arcs": [
+        "R13",
+        "R13_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "240,300": {
+      "id": [
+        240,
+        300
+      ],
+      "arcs": [
+        "R13"
+      ],
+      "valveArc": null
+    },
+    "270,220": {
+      "id": [
+        270,
+        220
+      ],
+      "arcs": [
+        "R12",
+        "R12_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "270,300": {
+      "id": [
+        270,
+        300
+      ],
+      "arcs": [
+        "R12"
+      ],
+      "valveArc": null
+    },
+    "300,220": {
+      "id": [
+        300,
+        220
+      ],
+      "arcs": [
+        "R99",
+        "R99_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "330,220": {
+      "id": [
+        330,
+        220
+      ],
+      "arcs": [
+        "R10",
+        "R10_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "360,220": {
+      "id": [
+        360,
+        220
+      ],
+      "arcs": [
+        "R01",
+        "L_R01"
+      ],
+      "valveArc": null
+    },
+    "360,300": {
+      "id": [
+        360,
+        300
+      ],
+      "arcs": [
+        "R01"
+      ],
+      "valveArc": null
+    },
+    "400,220": {
+      "id": [
+        400,
+        220
+      ],
+      "arcs": [
+        "R03",
+        "R03_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "430,220": {
+      "id": [
+        430,
+        220
+      ],
+      "arcs": [
+        "R02",
+        "L_R02"
+      ],
+      "valveArc": null
+    },
+    "470,220": {
+      "id": [
+        470,
+        220
+      ],
+      "arcs": [
+        "R052",
+        "R052_rvtosip"
+      ],
+      "valveArc": null
+    },
+    "470,300": {
+      "id": [
+        470,
+        300
+      ],
+      "arcs": [
+        "R052"
+      ],
+      "valveArc": null
+    },
+    "500,220": {
+      "id": [
+        500,
+        220
+      ],
+      "arcs": [
+        "R05",
+        "L_R05"
+      ],
+      "valveArc": null
+    },
+    "420,110": {
+      "id": [
+        420,
+        110
+      ],
+      "arcs": [
+        1056
+      ],
+      "valveArc": [
+        420,
+        110
+      ]
+    },
+    "30,190": {
+      "id": [
+        30,
+        190
+      ],
+      "arcs": [
+        "1591119494244"
+      ],
+      "valveArc": null
+    },
+    "30,100": {
+      "id": [
+        30,
+        100
+      ],
+      "arcs": [
+        "PUMP2V1",
+        "1591119494244",
+        "1591680423010",
+        2474
+      ],
+      "valveArc": 2474
+    },
+    "100,30": {
+      "id": [
+        100,
+        30
+      ],
+      "arcs": [
+        "PUMP2V1",
+        "L_01",
+        "L_FC_OUT",
+        1060
+      ],
+      "valveArc": 1060
+    },
+    "700,420": {
+      "id": [
+        700,
+        420
+      ],
+      "arcs": [
+        1058,
+        "L_RXX_Remove_NC",
+        "L_RXX_Remove"
+      ],
+      "valveArc": 1058
+    },
+    "740,420": {
+      "id": [
+        740,
+        420
+      ],
+      "arcs": [
+        "L_02Inlet",
+        1059,
+        "L_02Outlet"
+      ],
+      "valveArc": 1059
+    },
+    "420,410": {
+      "id": [
+        420,
+        410
+      ],
+      "arcs": [
+        "L_R02_NC",
+        "L_R02",
+        1089
+      ],
+      "valveArc": 1089
+    },
+    "380,410": {
+      "id": [
+        380,
+        410
+      ],
+      "arcs": [
+        1088,
+        "L_R01",
+        "L_R01_NC"
+      ],
+      "valveArc": 1088
+    },
+    "260,410": {
+      "id": [
+        260,
+        410
+      ],
+      "arcs": [
+        1087,
+        "L_R05_NC",
+        "L_R05"
+      ],
+      "valveArc": 1087
+    },
+    "230,410": {
+      "id": [
+        230,
+        410
+      ],
+      "arcs": [
+        1086,
+        "RXX_Remove",
+        "L_R05_RXX_NC"
+      ],
+      "valveArc": 1086
+    },
+    "200,410": {
+      "id": [
+        200,
+        410
+      ],
+      "arcs": [
+        1061,
+        "L_R04_NC",
+        "L_R04"
+      ],
+      "valveArc": 1061
+    },
+    "240,120": {
+      "id": [
+        240,
+        120
+      ],
+      "arcs": [
+        1117,
+        "R09_rvtosip",
+        "R07_rvtosip",
+        "RCU",
+        "R052_rvtosip",
+        "R03_rvtosip",
+        "R10_rvtosip",
+        "R99_rvtosip",
+        "R12_rvtosip",
+        "R13_rvtosip",
+        "R11_rvtosip",
+        "1591118605290",
+        "R08_rvtosip"
+      ],
+      "valveArc": 1117
+    },
+    "50,380": {
+      "id": [
+        50,
+        380
+      ],
+      "arcs": [
+        "1591680423010",
+        "L_RXX_Remove",
+        "1591119499202"
+      ],
+      "valveArc": null
+    },
+    "50,480": {
+      "id": [
+        50,
+        480
+      ],
+      "arcs": [
+        "1591119499202"
+      ],
+      "valveArc": null
+    },
+    "220,130": {
+      "id": [
+        220,
+        130
+      ],
+      "arcs": [
+        "1591118605290"
+      ],
+      "valveArc": null
+    },
+    "230,400": {
+      "id": [
+        230,
+        400
+      ],
+      "arcs": [
+        "RXX_Remove"
+      ],
+      "valveArc": null
+    },
+    "730,10": {
+      "id": [
+        730,
+        10
+      ],
+      "arcs": [
+        "FC",
+        "L_FC_OUT"
+      ],
+      "valveArc": null
+    },
+    "730,190": {
+      "id": [
+        730,
+        190
+      ],
+      "arcs": [
+        "L_FC_IN",
+        "FC"
+      ],
+      "valveArc": null
+    }
+  },
+  "ValvePortMapping": {
+    "Plugged": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "RXX": {
+      "Port": 24,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "RXX_L_01": {
+      "Port": 24,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R08": {
+      "Port": 3,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R08_L_01": {
+      "Port": 3,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R07": {
+      "Port": 4,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R07_L_01": {
+      "Port": 4,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R09": {
+      "Port": 5,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R09_L_01": {
+      "Port": 5,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R03": {
+      "Port": 6,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R03_L_01": {
+      "Port": 6,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R06": {
+      "Port": 7,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R06_L_01": {
+      "Port": 7,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R10": {
+      "Port": 8,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R10_L_01": {
+      "Port": 8,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R11": {
+      "Port": 9,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R11_L_01": {
+      "Port": 9,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R12": {
+      "Port": 10,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R12_L_01": {
+      "Port": 10,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R13": {
+      "Port": 11,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R13_L_01": {
+      "Port": 11,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R052": {
+      "Port": 12,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R052_L_01": {
+      "Port": 12,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "RXX_Remove": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "B"
+      ]
+    },
+    "RXX_Remove_L_01": {
+      "Port": 1,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A"
+      ]
+    },
+    "R02": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R02_L_01": {
+      "Port": 1,
+      "ValvePositions": [
+        "B",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R01": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R01_L_01": {
+      "Port": 1,
+      "ValvePositions": [
+        "B",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R05": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R05_L_01": {
+      "Port": 1,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R05_RXX": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    "R05_RXX_L_01": {
+      "Port": 1,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "B"
+      ]
+    },
+    "R04": {
+      "Port": 1,
+      "ValvePositions": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A"
+      ]
+    },
+    "R04_L_01": {
+      "Port": 1,
+      "ValvePositions": [
+        "B",
+        "A",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "B"
+      ]
+    }
+  },
+  "reagents": {
+    "R04": {
+      "color": "#8c564b",
+      "dollarsPerUL": 0.0005
+    },
+    "R05": {
+      "color": "#9467bd",
+      "dollarsPerUL": 0.15622
+    },
+    "R02": {
+      "color": "#2ca02c",
+      "dollarsPerUL": 0.01032
+    },
+    "R01": {
+      "color": "#d62728",
+      "dollarsPerUL": 0.0204
+    },
+    "Bulk_Fluid": {
+      "color": "#17becf",
+      "dollarsPerUL": 0
+    },
+    "R09": {
+      "color": "#e377c2",
+      "dollarsPerUL": 0.000043
+    },
+    "R08": {
+      "color": "#1f77b4",
+      "dollarsPerUL": 0.000042
+    },
+    "R12": {
+      "color": "#ff7f0e",
+      "dollarsPerUL": 0.1
+    },
+    "R052": {
+      "color": "#dbdb8d",
+      "dollarsPerUL": 0.005
+    },
+    "R11": {
+      "color": "#bcbd22",
+      "dollarsPerUL": 0.0005
+    },
+    "R07": {
+      "color": "#aec7e8",
+      "dollarsPerUL": 0.000063
+    },
+    "R03": {
+      "color": "#ffbb78",
+      "dollarsPerUL": 0.004
+    },
+    "R10": {
+      "color": "#98df8a",
+      "dollarsPerUL": 0.004
+    },
+    "R13": {
+      "color": "#ff9896",
+      "dollarsPerUL": 0.000003
+    },
+    "Spare3": {
+      "color": "#c5b0d5",
+      "dollarsPerUL": 0.0005
+    },
+    "R99": {
+      "color": "#c49c94",
+      "dollarsPerUL": 0.00038
+    },
+    "RXX": {
+      "color": "#dedede",
+      "dollarsPerUL": 0
+    }
+  }
+}

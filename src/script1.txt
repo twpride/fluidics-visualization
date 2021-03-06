@@ -1,0 +1,490 @@
+
+ElevatorDown 
+Valve R01_L_01
+Pull 50 20 
+Wait 2s Valve R02_L_01
+Pull 50 20 
+Wait 2s Valve R03_L_01
+Pull 50 20 
+Wait 2s Valve R04_L_01
+Pull 15 5
+Wait 2s Valve R05_L_01
+Pull 40 5
+Wait 2s 
+ElevatorUp
+   
+Valve R06_L_01
+Pull 450 30 
+Wait 3s Valve R07_L_01
+Pull 450 30 
+Wait 5s Valve R08_L_01
+Pull 450 30 
+Wait 3s Valve R09_L_01
+Pull 450 30 Wait 3s Valve R09_L_01
+Pull 500 20 
+Wait 8s Dispense
+
+Valve R09
+Pull 500 30
+Wait 10s Valve R04_L_01
+Pull 55 10
+Wait 2s Valve R05_L_01
+Pull 230 10
+Wait 7s Valve R05_RXX
+Pull 10 5
+Wait 5s Valve R05
+Pull -10 5
+Wait 6s Valve R04
+Pull 155 2 Wait 7s Valve R04_L_01 Pull 70 20
+Wait 4s
+Valve RXX_Remove_L_01
+Pull -115 5
+Wait 4s 
+
+Temperature 60
+Valve R04_L_01 Pull 700 20 Wait 5s
+Valve R05_L_01
+Pull -200 10
+Wait 8s Temperature 25
+Valve RXX_Remove 
+Pull -400 10 Wait 6s Valve R05_L_01
+Pull -460 60 Wait 5s
+Valve RXX_Remove_L_01
+Pull -65 30 Wait 5s
+Valve RXX_Remove Pull -50 10 Wait 4s Valve R05_L_01
+Pull -30 10
+Wait 2s
+Valve R09
+Pull 500 20
+Wait 10s 
+Temperature 25 
+Valve RXX
+Pull 10 5
+Wait 2s Valve R06_L_01
+Pull  230 60
+Wait 5s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R06
+Pull 200 10 
+Wait 8s Valve RXX_L_01
+Pull 10 5
+Wait 2s
+Valve R09_L_01
+Pull  230 60
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 200 10 
+Wait 5s Dispense
+
+Temperature 25  
+Valve R03_L_01
+Pull  305 60 Wait 10s Valve RXX_Remove_L_01 
+Pull -170 20 Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R03
+Pull 200 30
+Wait 12s Valve RXX
+Pull 10 5
+Wait 4s Valve R09
+Pull 100 5
+Wait 10s Temperature 65  
+Wait 1s Temperature 60  
+Wait 1s Temperature 55  
+Valve R09
+Pull 60 5 
+Wait 10s Temperature 25  
+Valve R09_L_01 Pull 50 20 
+Wait 5s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 5s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 200 30
+Wait 10s 
+Move UV 10
+Temperature 25 
+Valve R02_L_01
+Pull 30 15 Wait 5s Valve R01_L_01
+Pull 255 15 Wait 6s from10to6
+Valve RXX_Remove_L_01
+Pull -125 10 Wait 5s 
+Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R01 Pull 10 5 Wait 4s Valve R02
+Pull 195 5 Temperature 60  
+Wait 5s Temperature 25 
+Valve RXX_Remove Pull -60 10
+Wait 10s Valve RXX_Remove_L_01
+Pull -25 15
+Wait 10s Valve R09 Pull 200 30 
+Wait 10s Valve R02_L_01 Pull -15 5 Wait 4s 
+Temperature 25  
+Valve RXX
+Pull 10 5
+Wait 5s Valve R07_L_01
+Pull 210 60
+Wait 10s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R07
+Pull 200 30
+Wait 20s 
+Temperature 25  
+Move UV 10
+Valve RXX
+Pull 10 5
+Wait 5s Valve R08_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R08
+Pull 200 20 
+Wait 3s UV 1 10m Valve R08
+Pull 300 5 UVOff 
+Wait 5s Valve RXX
+Pull 10 5
+Wait 4s Valve R09_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 250 15 Wait 5s Dispense
+
+Move UV 10
+Temperature 60  
+Valve R02
+Pull 200 5
+Wait 3s Valve R09 Pull 10 5 
+Wait 5s Temperature 25
+Valve R09
+Pull 250 30 Wait 10s Valve R09_L_01
+Pull 100 60
+Wait 5s Valve R02_L_01 Pull -10 5
+Wait 2s 
+Temperature 25  
+Valve RXX
+Pull 10 5
+Wait 5s Valve R07_L_01
+Pull 210 60
+Wait 10s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R07
+Pull 200 30
+Wait 20s 
+Temperature 25  
+Move UV 10
+Valve RXX
+Pull 10 5
+Wait 5s Valve R08_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R08
+Pull 200 20 
+Wait 3s UV 1 10m Valve R08
+Pull 300 5 UVOff 
+Wait 5s Valve RXX
+Pull 10 5
+Wait 4s Valve R09_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 250 15 Wait 5s Dispense
+
+
+
+LoopStart 99
+Move UV 10
+Temperature 60  
+Valve R02
+Pull 200 5
+Wait 3s Valve R09 Pull 10 5 
+Wait 5s Temperature 25
+Valve R09
+Pull 250 30 Wait 10s Valve R09_L_01
+Pull 100 60
+Wait 5s Valve R02_L_01 Pull -10 5
+Wait 2s Temperature 25  
+Valve RXX
+Pull 10 5
+Wait 5s Valve R07_L_01
+Pull 210 60
+Wait 10s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R07
+Pull 200 30
+Wait 20s Temperature 25  
+Move UV 10
+Valve RXX
+Pull 10 5
+Wait 5s Valve R08_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R08
+Pull 200 20 
+Wait 3s UV 1 10m Valve R08
+Pull 300 5 UVOff 
+Wait 5s Valve RXX
+Pull 10 5
+Wait 4s Valve R09_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 250 15 Wait 5s Dispense
+LoopEnd
+
+Valve R09_L_01
+Pull 200 60
+Wait 4s ElevatorDown 
+Valve R02_L_01
+Pull 50 10 
+Wait 2s Valve R10_L_01
+Pull 50 20 
+Wait 6s 
+ElevatorUp
+Valve R02_L_01
+Pull 30 10
+Wait 3s Valve R01_L_01
+Pull 140 20 Wait 3s Valve R09_L_01
+Pull 100 60
+Wait 4s Valve R01_L_01
+Pull 65 10
+Wait 3s Valve RXX_Remove_L_01
+Pull -60 10 Wait 6s 
+
+Temperature 25 
+Valve RXX
+Pull 10 5
+Wait 2s Valve R06_L_01
+Pull  230 60
+Wait 5s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -40 10
+Wait 5s
+Valve R06
+Pull 200 10 
+Wait 8s Valve RXX_L_01
+Pull 10 5
+Wait 2s
+Valve R09_L_01
+Pull  210 60
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 200 10 
+Wait 5s Dispense
+
+Temperature 25  
+Valve R10_L_01
+Pull  300 60
+Wait 6s Valve RXX_Remove_L_01 
+Pull -140 20
+Wait 2s Valve RXX_Remove
+Pull -20 10 Wait 2s Valve R10
+Pull 200 30
+Wait 10s Valve RXX
+Pull 10 5
+Wait 5s Valve R09
+Pull 100 5
+Wait 6s Temperature 65  
+Wait 1s Temperature 60  
+Wait 1s Temperature 55  
+Valve R09
+Pull 60 5 
+Wait 3s Temperature 25  
+Valve R09_L_01 Pull 50 20 
+Wait 3s Valve RXX_Remove_L_01 
+Pull -110 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 3s
+Valve R09
+Pull 200 30
+Wait 10s 
+Move UV 10
+Temperature 25  
+Valve R02
+Pull 195 5 Temperature 60  
+Wait 5s Temperature 25 
+Valve RXX_Remove Pull -55 10
+Wait 10s Valve RXX_Remove_L_01
+Pull -25 15
+Wait 10s Valve R09 Pull 200 30 
+Wait 10s Valve R02_L_01 Pull -15 5 Wait 4s 
+Temperature 25  
+Valve RXX
+Pull 10 5
+Wait 5s Valve R07_L_01
+Pull 210 60
+Wait 10s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R07
+Pull 200 30
+Wait 20s 
+Temperature 25  
+Move UV 10
+Valve RXX
+Pull 10 5
+Wait 5s Valve R08_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R08
+Pull 200 20 
+Wait 3s UV 1 10m Valve R08
+Pull 300 5 UVOff 
+Wait 5s Valve RXX
+Pull 10 5
+Wait 4s Valve R09_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 250 15 Wait 5s Dispense
+
+Move UV 10
+Temperature 60  
+Valve R02
+Pull 200 5
+Wait 3s Valve R09 Pull 10 5 
+Wait 5s Temperature 25
+Valve R09
+Pull 250 30 Wait 10s Valve R09_L_01
+Pull 100 60
+Wait 5s Valve R02_L_01 Pull -10 5
+Wait 2s Temperature 25  
+Valve RXX
+Pull 10 5
+Wait 5s Valve R07_L_01
+Pull 210 60
+Wait 10s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R07
+Pull 200 30
+Wait 20s Temperature 25  
+Move UV 10
+Valve RXX
+Pull 10 5
+Wait 5s Valve R08_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R08
+Pull 200 20 
+Wait 3s UV 1 10m Valve R08
+Pull 300 5 UVOff 
+Wait 5s Valve RXX
+Pull 10 5
+Wait 4s Valve R09_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R09
+Pull 250 15 Wait 5s Dispense
+
+LoopStart 20
+Move UV 10
+Temperature 60  
+Valve R02
+Pull 200 5
+Wait 3s Valve R09 Pull 10 5 
+Wait 5s Temperature 25
+Valve R09
+Pull 250 30 Wait 10s Valve R09_L_01
+Pull 100 60
+Wait 5s Valve R02_L_01 Pull -10 5
+Wait 2s Temperature 25  
+Valve RXX
+Pull 10 5
+Wait 5s Valve R07_L_01
+Pull 210 60
+Wait 10s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 3s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R07
+Pull 200 30
+Wait 20s Temperature 25  
+Move UV 10
+Valve RXX
+Pull 10 5
+Wait 5s Valve R08_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 2s Valve RXX_Remove
+Pull -20 10
+Wait 5s
+Valve R08
+Pull 200 20 
+Wait 3s UV 1 10m Valve R08
+Pull 300 5 UVOff 
+Wait 5s Valve RXX
+Pull 10 5
+Wait 4s Valve R09_L_01
+Pull 210 80
+Wait 6s Valve RXX_Remove_L_01 
+Pull -65 20
+Wait 4s Valve RXX_Remove
