@@ -54,3 +54,24 @@ input#importScript {
 .svg_select_points_point {
   cursor: move;
 }
+
+
+input[type=range]::-webkit-slider-thumb {
+  background: red;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  border: none;
+  background: red;
+  cursor: pointer;
+}
+
+
+input[type=range]::-moz-range-track {
+  height: 2px;
+  background: grey;
+  border-radius: 1.3px;
+}
