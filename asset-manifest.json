@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fluidics-visualization/static/css/main.4093d2b6.chunk.css",
-    "main.js": "/fluidics-visualization/static/js/main.ca1daa48.chunk.js",
-    "main.js.map": "/fluidics-visualization/static/js/main.ca1daa48.chunk.js.map",
+    "main.js": "/fluidics-visualization/static/js/main.52bc6930.chunk.js",
+    "main.js.map": "/fluidics-visualization/static/js/main.52bc6930.chunk.js.map",
     "runtime-main.js": "/fluidics-visualization/static/js/runtime-main.06f50278.js",
     "runtime-main.js.map": "/fluidics-visualization/static/js/runtime-main.06f50278.js.map",
     "static/js/2.f345ce3a.chunk.js": "/fluidics-visualization/static/js/2.f345ce3a.chunk.js",
     "static/js/2.f345ce3a.chunk.js.map": "/fluidics-visualization/static/js/2.f345ce3a.chunk.js.map",
     "index.html": "/fluidics-visualization/index.html",
-    "precache-manifest.cb6d016faec3db19a890dde5631e278b.js": "/fluidics-visualization/precache-manifest.cb6d016faec3db19a890dde5631e278b.js",
+    "precache-manifest.f89a8f3f6d7d39025782e113440a0b2b.js": "/fluidics-visualization/precache-manifest.f89a8f3f6d7d39025782e113440a0b2b.js",
     "service-worker.js": "/fluidics-visualization/service-worker.js",
     "static/css/main.4093d2b6.chunk.css.map": "/fluidics-visualization/static/css/main.4093d2b6.chunk.css.map",
     "static/js/2.f345ce3a.chunk.js.LICENSE.txt": "/fluidics-visualization/static/js/2.f345ce3a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.06f50278.js",
     "static/js/2.f345ce3a.chunk.js",
     "static/css/main.4093d2b6.chunk.css",
-    "static/js/main.ca1daa48.chunk.js"
+    "static/js/main.52bc6930.chunk.js"
   ]
 }
